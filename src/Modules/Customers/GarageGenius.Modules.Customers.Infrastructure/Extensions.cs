@@ -1,6 +1,6 @@
 ﻿using GarageGenius.Modules.Customers.Core.Repositories;
-using GarageGenius.Modules.Customers.Infrastructure.Persistance.DbContexts;
-using GarageGenius.Modules.Customers.Infrastructure.Persistance.Repositories;
+using GarageGenius.Modules.Customers.Infrastructure.Persistence.DbContexts;
+using GarageGenius.Modules.Customers.Infrastructure.Persistence.Repositories;
 using GarageGenius.Shared.Infrastructure.Persistance.MsSqlServer;
 using GarageGenius.Shared.Infrastructure.Persistance.PostgreSql;
 using Microsoft.AspNetCore.Hosting;

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GarageGenius.Modules.Customers.Core.Entities.Customer">
+    <Position X="21.25" Y="3.5" Width="2" />
+    <AssociationLine Name="CustomerId" Type="GarageGenius.Modules.Customers.Core.Types.CustomerId">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.058" Y="-0.294" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="EmailAddress" Type="GarageGenius.Modules.Customers.Core.ValueObjects.EmailAddress">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.018" Y="0.11" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="UserId" Type="GarageGenius.Modules.Customers.Core.Types.UserId">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.204" Y="0.112" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="PhoneNumber" Type="GarageGenius.Modules.Customers.Core.ValueObjects.PhoneNumber">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.294" Y="0.11" Height="0.182" Width="1.243" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAQAAAAAAAAAAQAgAAAAAABAAAAAAAgAAAAg=</HashCode>
+      <FileName>Entities\Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CustomerId" />
+      <Property Name="EmailAddress" />
+      <Property Name="LastName" />
+      <Property Name="FirstName" />
+      <Property Name="PhoneNumber" />
+      <Property Name="UserId" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GarageGenius.Shared.Abstractions.Common.AuditableEntity">
+    <Position X="21.5" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="GarageGenius.Modules.Customers.Core.Types.CustomerId" Collapsed="true">
+    <Position X="18.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAAAAAAIAAAAAgAgAAACA=</HashCode>
+      <FileName>Types\CustomerId.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GarageGenius.Modules.Customers.Core.ValueObjects.EmailAddress" Collapsed="true">
+    <Position X="20.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAEgAAAAAAAAAAAAIAAAAAgAAAAQAA=</HashCode>
+      <FileName>ValueObjects\EmailAddress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GarageGenius.Modules.Customers.Core.ValueObjects.LastName" Collapsed="true">
+    <Position X="24.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAEgAAAAAAAAAAAAIAEAAAgAAAAAAA=</HashCode>
+      <FileName>ValueObjects\LastName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GarageGenius.Modules.Customers.Core.ValueObjects.FirstName" Collapsed="true">
+    <Position X="24.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAEgAAIAAAAAAAAAIAAAAAgAAAAAAA=</HashCode>
+      <FileName>ValueObjects\FirstName.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GarageGenius.Modules.Customers.Core.ValueObjects.PhoneNumber" Collapsed="true">
+    <Position X="22.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAgAAAAAAEgAAAAAAAAAAAAIAAAAAgAAAAAAA=</HashCode>
+      <FileName>ValueObjects\PhoneNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GarageGenius.Modules.Customers.Core.Types.UserId" Collapsed="true">
+    <Position X="18.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAEgAAAEAAAAAAAAIAAAAAgAAAAAAA=</HashCode>
+      <FileName>Types\UserId.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

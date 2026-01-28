@@ -2,26 +2,30 @@
 using GarageGenius.Shared.Abstractions.Exceptions;
 
 namespace GarageGenius.Shared.Abstractions.Commands.Decorators;
+/// <summary> Decorator that validates the command before passing it to the decorated handler. </summary>
+/// <param name="decorated"> The decorated handler. </param>
+/// <param name="validator"> The validator to use for the command.</param>
+/// <typeparam name="TCommand"> The type of command to handle. </typeparam>
 [CommandHandlerDecorator]
-public class ValidationCommandHandlerDecorator<TCommand> : ICommandHandler<TCommand> where TCommand : class, ICommand
+public class ValidationCommandHandlerDecorator<TCommand>(
+	ICommandHandler<TCommand> decorated,
+	IValidator<TCommand> validator)
+	: ICommandHandler<TCommand>
+	where TCommand : class, ICommand
 {
-	private readonly ICommandHandler<TCommand> _decorated;
-	private readonly IValidator<TCommand> _validator;
-
-	public ValidationCommandHandlerDecorator(
-		ICommandHandler<TCommand> decorated,
-		IValidator<TCommand> validator)
-	{
-		_decorated = decorated;
-		_validator = validator;
-	}
-
+	/// <summary> Handles the command by validating it first. </summary>
+	/// <param name="command"> The command to handle.</param>
+	/// <param name="cancellationToken"> The cancellation token.</param>
+	/// <exception cref="GarageGeniusValidationException"> Thrown when the command is invalid.</exception>
 	public async Task HandleCommandAsync(TCommand command, CancellationToken cancellationToken = default)
 	{
-		var validationResult = await _validator.ValidateAsync(command, cancellationToken);
-		if (validationResult.Errors.Any())
+		var validationResult = await validator.ValidateAsync(command, cancellationToken)
+			.ConfigureAwait(false);
+
+		if (validationResult.Errors.Count != 0)
 			throw new GarageGeniusValidationException(validationResult.Errors);
 
-		await _decorated.HandleCommandAsync(command, cancellationToken);
+		await decorated.HandleCommandAsync(command, cancellationToken)
+			.ConfigureAwait(false);
 	}
 }

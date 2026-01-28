@@ -4,24 +4,18 @@ using GarageGenius.Modules.Customers.Core.Repositories;
 using GarageGenius.Shared.Abstractions.Queries.Query;
 
 namespace GarageGenius.Modules.Customers.Application.Queries.GetCustomerById;
-internal class GetCustomerByIdQueryHandler : IQueryHandler<GetCustomerByIdQuery, GetCustomerByIdDto>
+internal class GetCustomerByIdQueryHandler(
+	ICustomerRepository customerRepository,
+	ICustomerMapperService customerMapperService)
+	: IQueryHandler<GetCustomerByIdQuery, GetCustomerByIdDto>
 {
-	private readonly ICustomerRepository _customerRepository;
-	private readonly ICustomerMapperService _customerMapperService;
-
-	public GetCustomerByIdQueryHandler(
-		ICustomerRepository customerRepository,
-		ICustomerMapperService customerMapperService)
+	public async Task<GetCustomerByIdDto> HandleQueryAsync(GetCustomerByIdQuery query,
+		CancellationToken cancellationToken = default)
 	{
-		_customerRepository = customerRepository;
-		_customerMapperService = customerMapperService;
-	}
+		Customer? customer = await customerRepository.GetCustomerByIdAsync(query.Id, cancellationToken)
+			.ConfigureAwait(false);
 
-	public async Task<GetCustomerByIdDto> HandleQueryAsync(GetCustomerByIdQuery query, CancellationToken cancellationToken = default)
-	{
-		Customer? customer = await _customerRepository.GetCustomerByIdAsync(query.Id, cancellationToken);
-
-		GetCustomerByIdDto getCustomerByIdDto = _customerMapperService.MapToGetCustomerByIdDto(customer);
+		GetCustomerByIdDto getCustomerByIdDto = customerMapperService.MapToGetCustomerByIdDto(customer);
 		return getCustomerByIdDto;
 	}
 }

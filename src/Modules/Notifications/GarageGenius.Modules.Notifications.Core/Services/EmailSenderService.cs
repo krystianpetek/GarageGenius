@@ -15,7 +15,7 @@ internal class EmailSenderService : IEmailSenderService
 	public Task SendEmailAsync(string receiver, string subject, string message, byte[]? content = default)
 	{
         const string fromMail = "sa.garagegenius@gmail.com";
-        const string fromAppPassword = "";
+        const string fromAppPassword = "kltcrhxqrkukmmmh";
 
         var mail = new MailMessage();
         mail.From = new MailAddress(fromMail);

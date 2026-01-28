@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="GarageGenius.Modules.Users.Core.Entities.User">
+    <Position X="21.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACBAgEBAEAAAAAgAAAAAABACAAAAFAAAAAA=</HashCode>
+      <FileName>Entities\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GarageGenius.Modules.Users.Core.Entities.Roles">
+    <Position X="27.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAACAEABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Roles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GarageGenius.Modules.Users.Core.Entities.Role">
+    <Position X="25.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAABAEAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GarageGenius.Shared.Abstractions.Common.AuditableEntity">
+    <Position X="23" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

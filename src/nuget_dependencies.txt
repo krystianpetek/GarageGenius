@@ -1,0 +1,202 @@
+Wspólne zależności dla projektów testowych:
+    - xunit.runner.visualstudio, Version=2.5.4
+    - coverlet.collector, Version=6.0.0
+    - Microsoft.NET.Test.Sdk, Version=17.8.0
+
+Wspólne zależności dla pozostałych projektów:
+
+15. GarageGenius.Modules.Users.Api.csproj - Unikalne zależności:
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+    - Swashbuckle.AspNetCore.Annotations, Version=6.5.0
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+
+12. GarageGenius.Modules.Reservations.Application.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+8. GarageGenius.Modules.Customers.UnitTests.csproj - Unikalne zależności:
+    - Moq, Version=4.20.70
+    - xunit, Version=2.6.2
+
+18. GarageGenius.Modules.Users.Infrastructure.csproj - Unikalne zależności:
+    Brak unikalnych zależności
+
+5. GarageGenius.Modules.Customers.Shared.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+28. GarageGenius.WebApi.csproj - Unikalne zależności:
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+    - Microsoft.EntityFrameworkCore.Design, Version=8.0.0
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - Microsoft.EntityFrameworkCore.Analyzers, Version=8.0.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+
+14. GarageGenius.Modules.Reservations.Infrastructure.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+27. GarageGenius.Shared.Infrastructure.csproj - Unikalne zależności:
+    - Microsoft.Extensions.DependencyInjection.Abstractions, Version=8.0.0
+    - Microsoft.EntityFrameworkCore.InMemory, Version=8.0.0
+    - Swashbuckle.AspNetCore.Annotations, Version=6.5.0
+    - Microsoft.AspNetCore.Authentication.JwtBearer, Version=8.0.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Npgsql.EntityFrameworkCore.PostgreSQL, Version=8.0.0
+    - Microsoft.EntityFrameworkCore.SqlServer, Version=8.0.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+    - Swashbuckle.AspNetCore, Version=6.5.0
+    - Microsoft.Data.SqlClient, Version=5.2.0
+    - Roslynator.Analyzers, Version=4.5.0
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+
+20. GarageGenius.Modules.Users.Tests.csproj - Unikalne zależności:
+    - Moq, Version=4.20.70
+    - xunit, Version=2.6.2
+
+3. GarageGenius.Modules.Customers.Core.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+23. GarageGenius.Modules.Vehicles.Core.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+25. GarageGenius.Modules.Vehicles.Shared.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+9. GarageGenius.Modules.Notifications.Api.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+2. GarageGenius.Modules.Customers.Application.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+16. GarageGenius.Modules.Users.Application.csproj - Unikalne zależności:
+    Brak unikalnych zależności
+
+7. GarageGenius.Modules.Customers.IntegrationTests.csproj - Unikalne zależności:
+    - Microsoft.AspNetCore.Mvc.Testing, Version=8.0.0
+    - xunit, Version=2.5.0
+    - xunit.analyzers, Version=1.6.0
+
+17. GarageGenius.Modules.Users.Core.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+1. GarageGenius.Modules.Customers.Api.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+24. GarageGenius.Modules.Vehicles.Infrastructure.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+22. GarageGenius.Modules.Vehicles.Application.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+6. GarageGenius.Modules.Customers.ArchitectureTests.csproj - Unikalne zależności:
+    - NetArchTest.Rules, Version=1.3.2
+    - FluentAssertions, Version=6.12.0
+    - xunit, Version=2.5.0
+    - xunit.analyzers, Version=1.6.0
+
+10. GarageGenius.Modules.Notifications.Core.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+19. GarageGenius.Modules.Users.Shared.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+11. GarageGenius.Modules.Reservations.Api.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+4. GarageGenius.Modules.Customers.Infrastructure.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+13. GarageGenius.Modules.Reservations.Core.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+21. GarageGenius.Modules.Vehicles.Api.csproj - Unikalne zależności:
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - Roslynator.Analyzers, Version=4.5.0
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+
+26. GarageGenius.Shared.Abstractions.csproj - Unikalne zależności:
+    - Microsoft.EntityFrameworkCore, Version=8.0.0
+    - Roslynator.Formatting.Analyzers, Version=4.5.0
+    - Scrutor, Version=4.2.2
+    - Roslynator.CodeAnalysis.Analyzers, Version=4.5.0
+    - SonarAnalyzer.CSharp, Version=9.8.0.76515
+    - FluentValidation.DependencyInjectionExtensions, Version=11.8.1
+    - Microsoft.VisualStudio.Threading.Analyzers, Version=17.7.30
+    - SerilogTimings, Version=3.0.1
+    - Serilog.Sinks.Seq, Version=6.0.0
+    - Roslynator.Analyzers, Version=4.5.0
+    - Serilog.AspNetCore, Version=8.0.0

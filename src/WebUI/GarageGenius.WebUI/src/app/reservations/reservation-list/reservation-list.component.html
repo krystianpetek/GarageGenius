@@ -59,7 +59,7 @@
     </ng-container>
     <ng-container matColumnDef="comment">
       <th class="text-primary-color" mat-header-cell *matHeaderCellDef> Opis </th>
-      <td class="text-primary-color" mat-cell *matCellDef="let element">{{element.comment}}</td>
+      <td class="text-primary-color" mat-cell *matCellDef="let element">{{element.comment.slice(0,70) + "..."}}</td>
     </ng-container>
     <tr mat-header-row *matHeaderRowDef="this.displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: this.displayedColumns;"></tr>

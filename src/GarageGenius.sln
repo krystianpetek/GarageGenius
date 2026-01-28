@@ -84,15 +84,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C3118D8F-3BF1-4926-9394-C9FD9E094AA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageGenius.Modules.Users.Application", "Modules\Users\GarageGenius.Modules.Users.Application\GarageGenius.Modules.Users.Application.csproj", "{366D452E-3D44-46AA-AE11-E9E78A8EAC68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GarageGenius.Modules.Users.Application", "Modules\Users\GarageGenius.Modules.Users.Application\GarageGenius.Modules.Users.Application.csproj", "{366D452E-3D44-46AA-AE11-E9E78A8EAC68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageGenius.Modules.Users.Infrastructure", "Modules\Users\GarageGenius.Modules.Users.Infrastructure\GarageGenius.Modules.Users.Infrastructure.csproj", "{50459F0F-A73B-4726-85BB-38DD545DC0AB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GarageGenius.Modules.Users.Infrastructure", "Modules\Users\GarageGenius.Modules.Users.Infrastructure\GarageGenius.Modules.Users.Infrastructure.csproj", "{50459F0F-A73B-4726-85BB-38DD545DC0AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageGenius.Modules.Notifications.Infrastructure", "Modules\Notifications\GarageGenius.Modules.Notifications.Infrastructure\GarageGenius.Modules.Notifications.Infrastructure.csproj", "{4975E802-1703-476D-9111-D9AA2AD3B055}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GarageGenius.Modules.Notifications.Infrastructure", "Modules\Notifications\GarageGenius.Modules.Notifications.Infrastructure\GarageGenius.Modules.Notifications.Infrastructure.csproj", "{4975E802-1703-476D-9111-D9AA2AD3B055}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageGenius.Modules.Notifications.Application", "Modules\Notifications\GarageGenius.Modules.Notifications.Application\GarageGenius.Modules.Notifications.Application.csproj", "{8DA288AE-00D2-4A11-B31E-E1B32FE0BB17}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GarageGenius.Modules.Notifications.Application", "Modules\Notifications\GarageGenius.Modules.Notifications.Application\GarageGenius.Modules.Notifications.Application.csproj", "{8DA288AE-00D2-4A11-B31E-E1B32FE0BB17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GarageGenius.Modules.Reservations.Shared", "Modules\Reservations\GarageGenius.Modules.Reservations.Shared\GarageGenius.Modules.Reservations.Shared.csproj", "{AFFA2345-9D43-4EEC-B86C-DD5D66287A3B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GarageGenius.Modules.Reservations.Shared", "Modules\Reservations\GarageGenius.Modules.Reservations.Shared\GarageGenius.Modules.Reservations.Shared.csproj", "{AFFA2345-9D43-4EEC-B86C-DD5D66287A3B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

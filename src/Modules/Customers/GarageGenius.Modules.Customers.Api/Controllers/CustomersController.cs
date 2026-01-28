@@ -9,22 +9,19 @@ using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace GarageGenius.Modules.Customers.Api.Controllers;
-public class CustomersController : BaseController
+/// <summary>
+/// Customers controller
+/// </summary>
+/// <param name="dispatcher"> // Dispatcher for handling commands and queries, events and paginated queries </param>
+public class CustomersController(IDispatcher dispatcher) : BaseController
 {
-	private readonly IDispatcher _dispatcher;
-
-	public CustomersController(IDispatcher dispatcher)
-	{
-		_dispatcher = dispatcher;
-	}
-
 	[HttpGet("{id:guid}")]
 	[Authorize]
 	[SwaggerOperation("Get customer id")]
 	[SwaggerResponse(StatusCodes.Status200OK, "Customer found", typeof(GetCustomerByIdDto))]
 	public async Task<ActionResult> GetCustomerByIdAsync(Guid id, CancellationToken cancellationToken)
 	{
-		var customer = await _dispatcher.DispatchQueryAsync<GetCustomerByIdDto>(new GetCustomerByIdQuery(id), cancellationToken);
+		var customer = await dispatcher.DispatchQueryAsync<GetCustomerByIdDto>(new GetCustomerByIdQuery(id), cancellationToken);
 		return Ok(customer);
 	}
 
@@ -34,7 +31,7 @@ public class CustomersController : BaseController
 	[SwaggerResponse(StatusCodes.Status200OK, "Customer found", typeof(GetCustomerByUserIdDto))]
 	public async Task<ActionResult> GetCustomerByUserIdAsync(Guid id, CancellationToken cancellationToken)
 	{
-		var customer = await _dispatcher.DispatchQueryAsync<GetCustomerByUserIdDto>(new GetCustomerByUserIdQuery(id), cancellationToken);
+		var customer = await dispatcher.DispatchQueryAsync<GetCustomerByUserIdDto>(new GetCustomerByUserIdQuery(id), cancellationToken);
 		return Ok(customer);
 	}
 
@@ -42,9 +39,10 @@ public class CustomersController : BaseController
 	[Authorize]
 	[SwaggerOperation("Create customer")]
 	[SwaggerResponse(StatusCodes.Status202Accepted, "Customer created")]
-	public async Task<ActionResult> CreateCustomerAsync(CreateCustomerCommand createCustomerCommand, CancellationToken cancellationToken)
+	public async Task<ActionResult> CreateCustomerAsync(CreateCustomerCommand createCustomerCommand, 
+		CancellationToken cancellationToken)
 	{
-		await _dispatcher.DispatchCommandAsync<CreateCustomerCommand>(createCustomerCommand, cancellationToken);
+		await dispatcher.DispatchCommandAsync<CreateCustomerCommand>(createCustomerCommand, cancellationToken);
 		return Accepted();
 	}
 
@@ -52,10 +50,12 @@ public class CustomersController : BaseController
 	[Authorize]
 	[SwaggerOperation("Update customer")]
 	[SwaggerResponse(StatusCodes.Status204NoContent, "Customer updated")]
-	public async Task<ActionResult> UpdateCustomerAsync(UpdateCustomerCommand updateCustomerCommand, CancellationToken cancellationToken)
+	public async Task<ActionResult> UpdateCustomerAsync(UpdateCustomerCommand updateCustomerCommand, 
+		CancellationToken cancellationToken)
 	{
-		await _dispatcher.DispatchCommandAsync<UpdateCustomerCommand>(updateCustomerCommand, cancellationToken);
+		await dispatcher.DispatchCommandAsync<UpdateCustomerCommand>(updateCustomerCommand, cancellationToken);
 		return NoContent();
 	}
 }
-	// TODO - handling for timeout / cancel request
+
+// TODO - handling for timeout / cancel request
